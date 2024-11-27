@@ -1,0 +1,49 @@
+body {
+    background-color: #000000;
+}
+
+.calculator {
+    font-size: 26px;
+    height: 60px;
+    width: 60px;
+    background-color: #333333;
+    color: white;
+    font-family: Arial;
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.operator {
+    font-size: 26px;
+    height: 60px;
+    width: 60px;
+    background-color: #FEA00A;
+    color: white;
+    font-family: Arial;
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.clear-button {
+    font-size: 15px;
+    height: 60px;
+    width: 60px;
+    background-color: #333333;
+    color: white;
+    font-family: Arial;
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.js-calculation {
+    font-size: 26px;
+    color: white;
+    font-family: Arial;
+
+}

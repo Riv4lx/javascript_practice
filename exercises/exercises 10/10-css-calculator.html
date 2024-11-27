@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="stylesheet" href="./10-css-calculator.css">
+
+    
+  </head>
+  <body>
+    <!-- Create an element to display the calculation. -->
+    <p class="js-calculation"></p>
+
+    <p>
+      <button onclick="
+        updateCalculation('1');
+      " class="calculator">1</button>
+
+      <button onclick="
+        updateCalculation('2');
+      " class="calculator">2</button>
+
+      <button onclick="
+        updateCalculation('3');
+      " class="calculator">3</button>
+
+      <button onclick="
+        updateCalculation(' + ');
+      " class="operator">+</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('4');
+      " class="calculator">4</button>
+
+      <button onclick="
+        updateCalculation('5');
+      " class="calculator">5</button>
+
+      <button onclick="
+        updateCalculation('6');
+      " class="calculator">6</button>
+
+      <button onclick="
+        updateCalculation(' - ');
+      " class="operator">-</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('7');
+      " class="calculator">7</button>
+
+      <button onclick="
+        updateCalculation('8');
+      " class="calculator">8</button>
+
+      <button onclick="
+        updateCalculation('9');
+      " class="calculator">9</button>
+
+      <button onclick="
+        updateCalculation(' * ');
+      " class="operator">*</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('0');
+      " class="calculator">0</button>
+
+      <button onclick="
+        updateCalculation('.');
+      " class="calculator">.</button>
+
+      <button onclick="
+        // Note: eval() takes a string and runs it as code.
+        // Avoid using eval() in real world projects since
+        // it can potentially be given harmful code to run.
+        // Only use eval() for learning purposes.
+        calculation = eval(calculation);
+
+        // Display the calculation on the page
+        // instead of console.log
+        displayCalculation();
+
+        localStorage.setItem('calculation', calculation);
+      " class="calculator">=</button>
+
+      <button onclick="
+        updateCalculation(' / ');
+      " class="operator">/</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation = '';
+
+        // Display the calculation on the page
+        // instead of console.log
+        displayCalculation();
+
+        localStorage.setItem('calculation', calculation);
+      " class="clear-button">Clear</button>
+    </p>
+
+    <script src="./10-css-calculator.js"></script>
+  </body>
+</html>
